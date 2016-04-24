@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical">
+
+        <LinearLayout
+            android:id="@+id/registerlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:inputType="phone"
+                android:id="@+id/registerName"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="请输入手机号" />
+            <TextView
+                android:text="获取验证码"
+                android:id="@+id/getcode"
+                android:textSize="12sp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:onClick="getCode"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/registerPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/registerlayout"
+            android:hint="请输入密码"
+            android:inputType="textPassword" />
+        <EditText
+            android:id="@+id/codeEdit"
+            android:hint="请输入验证码"
+            android:layout_below="@id/registerPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/codeEdit"
+            android:textSize="20sp"
+            android:onClick="register"
+            android:text="注册" />
+    </RelativeLayout>
+
+</LinearLayout>

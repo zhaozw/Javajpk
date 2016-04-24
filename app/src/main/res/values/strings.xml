@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Java精品课</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_select_city">SelectCityActivity</string>
+    <string name="tab_ke">课程</string>
+    <string name="tab_video">视频</string>
+    <string name="tab_news">消息</string>
+    <string name="tab_mine">我的</string>
+    <string name="exit_again">再按一次退出</string>
+    <string name="login_fail">登陆失败</string>
+    <string name="register_fail">注册失败</string>
+    <string name="docpath">docpath</string>
+    <string name="videopath">videopath</string>
+    <string name="kejian">课件</string>
+    <string name="renamedialog">重命名文件</string>
+    <string name="newname">请输入新文件名</string>
+    <string name="ok">确定</string>
+    <string name="canotwrite">文件不可写</string>
+    <string name="renamesuccess">更改成功！</string>
+    <string name="nofile">文件无法找到！</string>
+    <string name="ioexcep">IO异常!</string>
+    <string name="cancel">取消</string>
+    <string name="nostr">新名字不能为空！</string>
+    <string name="samename">名字一样，不更改！</string>
+
+</resources>

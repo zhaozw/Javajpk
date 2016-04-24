@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/main_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/main_nav_group">
+
+    </android.support.v4.view.ViewPager>
+
+    <RadioGroup
+        android:id="@+id/main_nav_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@mipmap/navigationbar_bg_deep"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <RadioButton
+            android:id="@+id/id_nav_tab_movie"
+            style="@style/NavTabButton"
+            android:checked="true"
+            android:drawableTop="@drawable/bg_nav_tab_movie"
+            android:text="@string/tab_news" />
+
+        <RadioButton
+            android:id="@+id/id_nav_tab_cinema"
+            style="@style/NavTabButton"
+            android:drawableTop="@drawable/bg_nav_tab_cinema"
+            android:text="@string/tab_ke" />
+
+        <RadioButton
+            android:id="@+id/id_nav_tab_sales"
+            style="@style/NavTabButton"
+            android:drawableTop="@drawable/bg_nav_tab_sales"
+            android:text="@string/tab_video" />
+
+        <RadioButton
+            android:id="@+id/id_nav_tab_user"
+            style="@style/NavTabButton"
+            android:drawableTop="@drawable/bg_nav_tab_user"
+            android:text="@string/tab_mine"
+            />
+    </RadioGroup>
+
+</RelativeLayout>

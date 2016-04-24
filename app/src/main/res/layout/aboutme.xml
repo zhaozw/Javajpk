@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#444"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v4.view.ViewPager
+        android:id="@+id/about_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:text="立即体验"
+            android:visibility="gone"
+            android:textColor="#fff"
+            android:background="#00000000"
+            android:id="@+id/about_gologin"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_below="@+id/about_gologin"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:paddingBottom="40dp"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/ic_radio_button_checked_black_24dp"
+                android:id="@+id/about_indicator_1"
+                android:layout_width="12dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="12dp" />
+            <ImageView
+                android:src="@drawable/ic_radio_button_unchecked_black_24dp"
+                android:id="@+id/about_indicator_2"
+                android:layout_width="12dp"
+                android:layout_height="12dp" />
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_radio_button_unchecked_black_24dp"
+                android:id="@+id/about_indicator_3"
+                android:layout_width="12dp"
+                android:layout_height="12dp" />
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

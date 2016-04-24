@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:gravity="center_horizontal"
+    android:paddingTop="20dp"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <EditText
+            android:id="@+id/login_name"
+            android:inputType="phone"
+            android:singleLine="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入学号" />
+
+        <EditText
+            android:singleLine="true"
+            android:id="@+id/login_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_name"
+            android:hint="请输入密码"
+            android:inputType="textPassword" />
+
+        <TextView
+            android:id="@+id/gotoregister"
+            android:textSize="20sp"
+            android:textColor="#5e5555"
+            android:onClick="goregiter"
+            android:clickable="true"
+            android:layout_marginTop="16dp"
+            android:layout_width="80dp"
+            android:gravity="center"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/login_password"
+            android:text="注册" />
+
+        <Button
+            android:id="@+id/bt_login"
+            android:layout_marginTop="16dp"
+            android:onClick="goLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gotoregister"
+            android:text="登陆" />
+        <Button
+            android:text="跳过"
+            android:onClick="goMain"
+            android:layout_marginTop="20dp"
+            android:textSize="14sp"
+            android:background="#fff"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/bt_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+</RelativeLayout>
